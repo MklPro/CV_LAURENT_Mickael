@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.B1, .B2 {
+    background-color: #00f7ff;
+    border: white;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.B1:active, .B2:active {
+    transform: translate(4px);
+}
+
+.B1:hover, .B2:hover {
+    background-color: #14a5c9;
+}
+
+
+header {
+    background: center/cover;
+    background-color: black;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+body {
+    background-image: url(/assets/images/galaxie.jpg);
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    display : inline-block;
+}
+
+li a {
+    display: inline-block;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    outline-color: red;
+}
+
+li a:hover {
+    background-color: #00f7ff;
+    color: black;
+}
+
+li a:active {
+    background-color: #14a5c9;
+}
+
+.adresse {
+    background-color: #f69f9f;
+    border-radius: 50px;
+    text-align: center;
+    padding: 15px;
+    margin: 150px;
+}
+
+.telephone {
+    background-color: #00f7ff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 15px;
+    margin: 150px;
+}
+
+.mail {
+    background-color: #f69f9f;
+    border-radius: 50px;
+    text-align: center;
+    padding: 15px;
+    margin: 150px;
+}
