@@ -1,0 +1,22 @@
+{
+  "name": "cv_en_ligne",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/styles/scss/index.scss:assets/styles/css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/MklPro/cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/MklPro/cv/issues"
+  },
+  "homepage": "https://gitlab.com/MklPro/cv#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
