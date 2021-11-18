@@ -1,0 +1,91 @@
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-family: $titre;
+    list-style: none;
+    padding: 50px;
+
+    h2::before {
+        content: "hello";
+        position: absolute;
+        background-color: #000000;
+        color: #000000;
+        padding-bottom: 5px;
+        width: 100%;
+        animation: anime 10s;
+        animation-fill-mode: forwards;
+    }
+
+    
+    .a::before {
+        content: "hello";
+        position: absolute;
+        background-color: #000000;
+        color: #000000;
+        padding-bottom: 5px;
+        width: 100%;
+        animation: anime 15s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+    
+    .b::before {
+        content: "hello";
+        position: absolute;
+        background-color: #000000;
+        color: #000000;
+        padding-bottom: 5px;
+        width: 100%;
+        animation: anime 15s;
+        animation-delay: 8s;
+        animation-fill-mode: forwards;
+    }
+
+    .c::before {
+        content: "hello";
+        position: absolute;
+        background-color: #000000;
+        color: #000000;
+        padding-bottom: 5px;
+        width: 100%;
+        animation: anime 15s;
+        animation-delay: 12s;
+        animation-fill-mode: forwards;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 20px;
+        border: 3px solid white;
+        
+    }
+    
+    button:active {
+        transform: translate(4px);
+    }
+
+    button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    img {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@keyframes anime {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}

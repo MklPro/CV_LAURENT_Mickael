@@ -1,0 +1,42 @@
+.competences{
+    background-color: $bg-color;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    .cartes {
+        display: flex;
+
+        .carte {
+            margin: 30px;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: black;
+            transition: 2s;
+            
+            
+            &:hover {
+             background-color: white;
+            color: black;
+            transform: scale(1.2);
+            cursor: pointer;
+                
+                li {
+                    visibility: visible;
+                }
+            }
+
+            li {
+                visibility: hidden;
+            }
+
+            .h4 {
+                margin: auto;
+            }
+        }   
+    }
+}

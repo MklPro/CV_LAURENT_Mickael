@@ -1,0 +1,57 @@
+.xp {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    align-items: center;
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            text-decoration: underline;
+
+            .fa-briefcase {
+            margin-right: 40px;
+            height: 5%;
+            width: 5%;
+            vertical-align: middle;
+            }
+        }
+        
+        // .container {
+        //     display: flex;
+        //     // flex-direction: row;
+        // }
+
+        .date {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 200px 200px 200px 200px;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: bold;
+            color: blue;
+        }
+
+        .txt {
+            background-color: black;
+            border-radius: 10px;
+            border: 5px solid white;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .ligne { 
+            height: 1000px;
+            width: 5px;
+            display: flex;
+            border: 5px solid white;
+            margin: 0px 100px;
+            border-radius: 50px;
+            } 
+
+}
+

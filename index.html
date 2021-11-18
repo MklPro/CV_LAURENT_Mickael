@@ -9,57 +9,125 @@
     <link rel="stylesheet" href="/assets/styles/css/index.css">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 </head>
 
 
 <body>
 
-    <nav>
-        <H1></H1>
-        <div class="onglets">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Compétences</a></li>
-                <li><a href="">Exprériences Professionelles</a></li>
-                <li><a href="">Diplômes et Formations</a></li>
-                <li><a href="">Les Plus</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav navbar-nav-scroll m-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    <a class="nav-link active" aria-current="page" href="#">Compétences</a>
+                    <a class="nav-link active" aria-current="page" href="#">Exprériences Professionelles</a>
+                    <a class="nav-link active" aria-current="page" href="#">Diplômes et Formations</a>
+                    <a class="nav-link active" aria-current="page" href="#">Contacts</a>
+                </div>
+            </div>
+
         </div>
     </nav>
 
     <header>
-        <h1>Bonjour, je m'appel Mickaël LAURENT et je suis en formation Concepteur développeur d'Applications </h1>
-        <button class="B1"> CV Téléchargeable </button>
-        <button class="B2"> CONTACT </button>
-    </header><br>
+        <img src="/assets/images/Logo_LM-sans-baseline-blanc.png" alt="">
+        <div class="anime">
+            <h2>Bonjour, je m'appelle Mickaël LAURENT et voici la première édition de mon cv en ligne !</h2>
+            <li class="a">Je suis en formation Concepteur développeur d'application du 31/09/2021 au 10/06/2022.</li>
+            <li class="b">Je recherche un stage du 07/03/2022 au 29/03/2022 sur Clermont-Ferrand et alentours.</li>
+            <li class="c">J'ajouterais ici ce que j'aurai appris au cours de ma formation, donc n'hesitez pas à revenir
+                jeter un
+                coup d'oeil !</li>
+        </div>
+        <button> CV Téléchargeable </button>
+    </header>
 
-    <div class="Compétences">
-        <h2>Compétences</h2><br>
-        <p>
-            Montage pc <br>
-            Manipulation Logiciels <br>
-            Apprentissage HTLM/CSS/JS. PHP/SQL/GIT par la suite, avec certains framework <br>
-            Espaces verts : Tonte, élagage, débroussaillage, plantation, embellissement, désherbage <br>
-            Voirie : Balayeuse mécanique, enrobé, curage fossés, déneigement <br>
-            Bâtiment : Plomberie, électricité, peinture, carrelage, pose de revêtements sols et muraux <br>
-            Régisseur de marché et de cinéma
-        </p>
-    </div><br>
+    <div class="separation">.</div>
+    
+    <div class="competences">
+        <div class="cartes row g-4">
+            <div class="carte row-md-4 col-lg-3">
+                <h4 class="underline">Langages :</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS : Sass,Scss / Bootstrap</li>
+                    <li>JavaScript : Algo / DOM</li>
+                </ul>
+            </div>
 
-    <div class="Exprériences Professionnelles">
-        <h2>Exprériences Professionnelles</h2><br>
-        <p>
-            Adjoint technique térritorial poolyvalent <br>
-            02/2013 - 10/2020 Mairie de Neuvic (Corrèze 19) <br>
-            Sapeur-pompier volontaire <br>
-            01/2013 - 10/2020 Cis de Neuvic <br>
-            Ressuage en fonderie <br>
-            12/2011 - 06/2012 Constellium Ussel (Corrèze 19) <br>
-            Emploi saisonnier <br>
-            07/2011 - 08/2011 Mairie de Neuvic
-        </p>
+            <div class="carte row-md-4 col-lg-3">
+                <h4 class="underline">Informatique :</h4>
+                <ul>
+                    <li>XMind : Elaboration carte mentale</li>
+                    <li>Figma : Maquette graphique</li>
+                    <li>Git bash et Fork</li>
+                </ul>
+            </div>
+
+            <div class="carte row-md-4 col-lg-3">
+                <h4 class="underline">Atouts :</h4>
+                <ul>
+                    <li>Sérieux</li>
+                    <li>Motivé</li>
+                    <li>Impliqué</li>
+                    <li>Passioné</li>
+                    <li>Autonome</li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    <div class="separation2">.</div>
+
+    <div class="xp">
+        <h2><i class="fas fa-briefcase"></i>Exprériences Professionnelles</h2>
+        <div class="container row">
+
+            <div class="container1">
+                <div class="date">
+                    <p>02/2013 - 10/2020</p>
+                </div>
+                <div class="date">
+                    <p>01/2013 - 10/2020</p>
+                </div>
+                <div class="date">
+                    <p>12/2011 - 06/2012</p>
+                </div>
+                <div class="date">
+                    <p>07/2011 - 08/2011</p>
+                </div>
+            </div>
+
+            <div class="ligne">
+            </div>
+
+            <div class="container2">
+                <div class="txt">
+                    <p>Adjoint technique térritorial poolyvalent <br> Mairie de Neuvic (Corrèze 19)</p>
+                </div>
+                <div class="txt">
+                    <p>Sapeur-pompier volontaire <br> Cis de Neuvic</p>
+                </div>
+                <div class="txt">
+                    <p>Ressuage en fonderie <br> Constellium Ussel (Corrèze 19)</p>
+                </div>
+                <div class="txt">
+                    <p>Emploi saisonnier <br> Mairie de Neuvic</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="separation">.</div>
 
     <div class="Diplômes et Formations">
         <h2>Diplômes et Formations</h2><br>
@@ -86,22 +154,7 @@
         </p>
     </div>
 
-    <div class="atouts">
-        <h3>Atouts</h3><br>
-        <p>
-            Sérieux <br>
-            Motivé <br>
-            Impliqué <br>
-            Passioné <br>
-            Autonome <br>
-        </p>
-    </div>
-
-    <div class="Langues">
-        <h3>Langues</h3><br>
-        Français <br>
-        Anglais <br>
-    </div>
+    <div class="separation2">.</div>
 
     <div class="Centres d'intérêts">
         <h3>Centres d'intérêts</h3><br>
@@ -111,16 +164,8 @@
         Cryptomonaies <br>
     </div>
 
-    <div class="et aussi">
-        <h3>Et aussi</h3><br>
-        Remplacement régulier projecteur cinéma communal <br>
-        Remplacement régulier projecteur centre équestre communal <br>
-        Remplacement régulier projecteur ATSEM école élémentaire <br>
-    </div>
-
-
-    <div class="bod">
-        <div class="test">
+    <div class="contact">
+        <div class="rotation">
             <div class="last-element p-5 mt-5">
                 <div class="row col-md-4c ol-lg-12">
                     <div class="box">

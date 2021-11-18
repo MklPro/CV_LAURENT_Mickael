@@ -2,187 +2,27 @@
 @import "./mixins.scss";
 @import "./variables.scss";
 @import "./bootstrap.css";
+@import "../scss/bases/competences";
+@import "../scss/bases/contact";
+@import "../scss/bases/diplomeXformations";
+@import "../scss/bases/experiences";
+@import "../scss/bases/footer";
+@import "../scss/bases/header";
+@import "../scss/bases/last";
+@import "../scss/bases/nav";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $titre;
 }
 
-header {
-    background-color: black;
-    text-align: center;
-    color: white;
+.separation {
+    background: linear-gradient(90deg,#ff00e6 0%, #00ffff 100%);
 }
 
-.B1, .B2 {
-    background-color: #00eeff;
-    border: white;
-    color: black;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 20px;
+.separation2 {
+    background: linear-gradient(90deg,#00ffff 0%,#ff00e6 100%);
 }
-
-.B1:active, .B2:active {
-    transform: translate(4px);
-}
-
-.B1:hover, .B2:hover {
-    background-color: #0081a1;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin-bottom: 200px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
-
-li {
-    display : inline-block;
-}
-
-li a {
-    display: inline-block;
-    color: #ffffff;
-    padding: 14px 16px;
-    text-decoration: none;
-    outline-color: red;
-}
-
-li a:hover {
-    background-color: #00f7ff;
-    color: black;
-    border-radius: 16px;
-}
-
-li a:active {
-    background-color: #0081a1;
-}
-
-.last-element {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-    flex-wrap: nowrap;
-}
-
-.last-element .box {
-    position: relative;
-    width: 250px;
-    height: 200px;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 20px;
-    transition: 0.5s;
-    z-index: 30;
-}
-
-.last-element .box:hover {
-    transform: translateY(-20px);
-    z-index: 30;
-}
-
-.last-element .box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg,#d400d4,#00ccff);
-    z-index: 20;
-}
-
-.last-element .box::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10%;
-    height: 10%;
-    background: linear-gradient(45deg,#d400d4,#00ccff);
-    filter: blur(50px);
-    z-index: 20;
-}
-
-.last-element .box .content {
-    position: relative;
-    padding: 20px 40px;
-    color: #f8f8f8;
-    z-index: 30;
-}
-
-.last-element .box .cadre {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    bottom: 6px;
-    right: 6px;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 30;
-}
-
-.test::before {
-    content: "";
-    position: absolute;
-    background: linear-gradient(#00ccff,#d400d4);
-    animation: animate 3s linear infinite;
-    width: 200%;
-    height: 50%;
-  }
-  
-.test::after {
-  content: "";
-  position: absolute;
-  inset: 10px;
-  background: #000000;
-  border-radius: 10px;
-}
-
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(350deg);
-    }
-  }
-
-  .test {
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bod {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000000;
-    color: white;
-    z-index: 0;
-
-    p {
-        position: relative;
-        z-index: 0;
-    }
-}
+   
