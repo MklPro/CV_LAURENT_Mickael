@@ -18,6 +18,11 @@
     font-family: $titre;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+
 .separation {
     background: linear-gradient(90deg,#ff00e6 0%, #00ffff 100%);
 }

@@ -27,10 +27,10 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav navbar-nav-scroll m-auto">
                     <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                    <a class="nav-link active" aria-current="page" href="#">Compétences</a>
-                    <a class="nav-link active" aria-current="page" href="#">Exprériences Professionelles</a>
-                    <a class="nav-link active" aria-current="page" href="#">Diplômes et Formations</a>
-                    <a class="nav-link active" aria-current="page" href="#">Contacts</a>
+                    <a class="nav-link active" aria-current="page" href="#competences">Compétences</a>
+                    <a class="nav-link active" aria-current="page" href="#xp">Exprériences Professionelles</a>
+                    <a class="nav-link active" aria-current="page" href="#formation">Diplômes et Formations</a>
+                    <a class="nav-link active" aria-current="page" href="#contact">Contacts</a>
                 </div>
             </div>
 
@@ -47,19 +47,21 @@
                 jeter un
                 coup d'oeil !</li>
         </div>
-        <button> CV Téléchargeable </button>
+        <button onclick="window.open('C:\Projet-aformac\CV_en_ligne\assets\CV_Laurent_Mickaël.pdf')">CV Téléchargeable</a></button>
     </header>
 
-    <div class="separation">.</div>
-    
+    <div id="competences" class="separation">.</div>
+
     <div class="competences">
         <div class="cartes row g-4">
             <div class="carte row-md-4 col-lg-3">
                 <h4 class="underline">Langages :</h4>
                 <ul>
                     <li>HTML</li>
-                    <li>CSS : Sass,Scss / Bootstrap</li>
-                    <li>JavaScript : Algo / DOM</li>
+                    <li>CSS : Sass / Scss / Bootstrap</li>
+                    <li>JavaScript : Front</li>
+                    <li>Php : Symfony </li>
+                    <li>Anglais maitrisé</li>
                 </ul>
             </div>
 
@@ -85,88 +87,164 @@
         </div>
     </div>
 
-    <div class="separation2">.</div>
+    <div id="xp" class="separation2">.</div>
 
     <div class="xp">
         <h2><i class="fas fa-briefcase"></i>Exprériences Professionnelles</h2>
-        <div class="container row">
 
-            <div class="container1">
-                <div class="date">
-                    <p>02/2013 - 10/2020</p>
-                </div>
-                <div class="date">
-                    <p>01/2013 - 10/2020</p>
-                </div>
-                <div class="date">
-                    <p>12/2011 - 06/2012</p>
-                </div>
-                <div class="date">
-                    <p>07/2011 - 08/2011</p>
-                </div>
+        <div class="cartes row g-3">
+            <div class="carte row-md-3 col-lg-2">
+                <h4 class="underline">02/2013 - 10/2020</h4>
+                <p>Adjoint technique territorial poolyvalent <br> Mairie de Neuvic (Corrèze 19)</p>
             </div>
 
-            <div class="ligne">
+            <div class="carte row-md-3 col-lg-2">
+                <h4 class="underline">01/2013 - 10/2020</h4>
+                <p>Sapeur-pompier volontaire <br> Cis de Neuvic</p>
             </div>
 
-            <div class="container2">
-                <div class="txt">
-                    <p>Adjoint technique térritorial poolyvalent <br> Mairie de Neuvic (Corrèze 19)</p>
-                </div>
-                <div class="txt">
-                    <p>Sapeur-pompier volontaire <br> Cis de Neuvic</p>
-                </div>
-                <div class="txt">
-                    <p>Ressuage en fonderie <br> Constellium Ussel (Corrèze 19)</p>
-                </div>
-                <div class="txt">
-                    <p>Emploi saisonnier <br> Mairie de Neuvic</p>
-                </div>
+            <div class="carte row-md-3 col-lg-2">
+                <h4 class="underline">12/2011 - 06/2012</h4>
+                <p>Ressuage en fonderie <br> Constellium Ussel (Corrèze 19)</p>
             </div>
 
+            <div class="carte row-md-3 col-lg-2">
+                <h4 class="underline">07/2011 - 08/2011</h4>
+                <p>Emploi saisonnier <br> Mairie de Neuvic</p>
+            </div>
         </div>
+
     </div>
 
-    <div class="separation">.</div>
+    <div id="formation" class="separation">.</div>
 
-    <div class="Diplômes et Formations">
-        <h2>Diplômes et Formations</h2><br>
-        <p>
-            Scolaire : <br>
-            2014 : CAP électricien <br>
-            2007/2010 Niveau bac STI génie mécanique <br><br>
-        </p>
-        <p>
-            Professionnel : <br>
-            2018 : Habilitations électrique B0/HOV et B1V <br>
-            2018 : Obtention Cacès suivants : R372M / R372 1,4,8 et 9 / R386 / 1B <br>
-            2017 : Formation assistants de prévention <br>
-            2016 : Formation intégration fonction publique territoriale <br>
-            2016 :Formation monteur chapiteaux, tentes et structures bâchées
-        </p>
-        <p>
-            Pompier : <br>
-            2016 : Formation conduite engin pompe niveu 1 et 2 <br>
-            2015 : Formation equipier feu de forêt <br>
-            2014 : Formation equipier incendire et opérations diverse <br>
-            2014 : Formation premier secours en équipe de niveu 1 et 2 <br>
-            2013 : formation prévention et secours civique de niveau 1
-        </p>
+    <div class="formations">
+        <h2><i class="fas fa-graduation-cap"></i>Diplômes et Formations</h2>
+
+        <div class="container">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h3>Scolaire :</h3>
+                        <p>
+                            2014 : CAP électricien <br>
+                            2007/2010 Niveau bac STI génie mécanique <br><br>
+                        </p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h3>Professionnel :</h3>
+                        <p>
+                            2018 : Habilitations électrique B0/HOV et B1V <br>
+                            2018 : Obtention Cacès suivants : R372M / R372 1,4,8 et 9 / R386 / 1B <br>
+                            2017 : Formation assistants de prévention <br>
+                            2016 : Formation intégration fonction publique territoriale <br>
+                            2016 :Formation monteur chapiteaux, tentes et structures bâchées
+                        </p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <h3>Pompier :</h3>
+                        <p>
+                            2016 : Formation conduite engin pompe niveu 1 et 2 <br>
+                            2015 : Formation equipier feu de forêt <br>
+                            2014 : Formation equipier incendire et opérations diverse <br>
+                            2014 : Formation premier secours en équipe de niveu 1 et 2 <br>
+                            2013 : formation prévention et secours civique de niveau 1
+                        </p>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </div>
 
     <div class="separation2">.</div>
 
-    <div class="Centres d'intérêts">
-        <h3>Centres d'intérêts</h3><br>
-        Musique <br>
-        Informatique <br>
-        Jeux vidéos <br>
-        Cryptomonaies <br>
+    <div class="plus">
+        <h3><i class="fas fa-gamepad"></i>Centres d'intérêts</h3>
+
+        <div class="container-img">
+            <div class="item">
+                <img src="/assets/images/game.jpeg" alt="">
+                <span>Jeux-Vidéos</span>
+            </div>
+
+            <div class="item">
+                <img src="/assets/images/crypto.jpeg" alt="">
+                <span>Crypto</span>
+            </div>
+
+            <div class="item">
+                <img src="/assets/images/musique.jpeg" alt="">
+                <span>Musique</span>
+            </div>
+
+            <div class="item">
+                <img src="/assets/images/info.jpeg" alt="">
+                <span>Informatique</span>
+            </div>
+        </div>
     </div>
 
+    <div id="contact" class="separation">.</div>
+
+    <div class="container-contact">
+        <h1>Formulaire de contact</h1>
+
+        <form action="mail.php" method="post">
+
+            <div class="item">
+                <label for="nom">Nom & prénom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom">
+            </div>
+
+            <div class="item">
+                <label for="sujet">Sujet</label>
+                <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+            </div>
+
+            <div class="item">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Votre email">
+            </div>
+
+            <div class="item">
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Votre message"></textarea>
+            </div>
+
+            <div class="submit-input">
+                <input class="submit" type="submit" value="Envoyer">
+            </div>
+
+        </form>
+    </div>
+
+    <div class="separation2">.</div>
+
     <div class="contact">
+
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/micka%C3%ABl-laurent-13255a222/"><i class="fab fa-linkedin"></i></a>
+        </div>
+
         <div class="rotation">
+
             <div class="last-element p-5 mt-5">
+
                 <div class="row col-md-4c ol-lg-12">
                     <div class="box">
                         <div class="cadre">
@@ -175,6 +253,7 @@
                             <p>laurentm18.pro@gmail.com</p>
                         </div>
                     </div>
+
                     <div class="box">
                         <div class="cadre">
                         </div>
@@ -182,6 +261,7 @@
                             <p>25 Boulevard Gordon Bennett <br>63100 Clermont-Ferrand</p>
                         </div>
                     </div>
+
                     <div class="box">
                         <div class="cadre">
                         </div>
@@ -189,9 +269,15 @@
                             <p>07 70 36 30 80</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
+
+        <div class="gitlab">
+            <a href="https://gitlab.com/MklPro"><i class="fab fa-gitlab"></i></a>
+        </div>
+
     </div>
 
 </body>
