@@ -22,12 +22,60 @@ body {
     overflow-x: hidden;
 }
 
-
 .separation {
-    background: linear-gradient(90deg,#ff00e6 0%, #00ffff 100%);
+    background: linear-gradient(90deg, #ff00e6 0%, #00ffff 100%);
 }
 
 .separation2 {
-    background: linear-gradient(90deg,#00ffff 0%,#ff00e6 100%);
+    background: linear-gradient(90deg, #00ffff 0%, #ff00e6 100%);
 }
-   
+
+@media (max-width: 700px) {
+    .container-contact {
+        form {
+            min-width: 100%;
+            padding: 0;
+            margin: 0;
+
+            input {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .plus {
+        .container-img {
+            display: block;
+        }
+    }
+
+    .competences {
+        .cartes {
+            .carte {
+                margin: 20px 0px;
+            }
+            
+        }
+    }
+
+    .formations {
+        
+        .container {
+            min-height: 60vh;
+        }
+    }
+
+    .contact {
+        display: block;
+        .rotation {
+            min-width: 100%;
+            .last-element {
+                .box {
+                    min-width: 100%;
+                }
+            }
+        }
+    }
+}
